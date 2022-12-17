@@ -8,5 +8,5 @@ body {
 }
 
 .site-container {
-  @apply px-4 w-full mx-auto [@media_(min-width:576px)]:max-w-[540px] md:max-w-[720px] [@media_(min-width:992px)]:max-w-[960px] xl:max-w-[1170px];
+  @apply px-4 w-full mx-auto [@media_(min-width:576px)]:max-w-[540px] md:max-w-[720px] [@media_(min-width:992px)]:max-w-[960px] [@media_(min-width:1200px)]:max-w-[1170px];
 }

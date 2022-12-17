@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>CasaAway</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <main>
       <!-- HEADER -->
       <header
+        id="MainHeader"
         class="fixed px-[30px] z-[1000] left-0 top-0 w-full flex justify-between items-center"
       >
         <a href="/" class="mt-6">
@@ -583,6 +615,335 @@
         </div>
       </section>
 
+      <!-- FEATURED IN SPAIN -->
+
+      <section class="py-[60px] bg-[#f7f7f7]">
+        <div class="site-container">
+          <h2 class="text-center font-bold text-3xl text-[rgb(72,72,72)]">
+            Featured Properties for Sale in Spain
+          </h2>
+          <p class="text-center text-base text-[rgb(119,119,119)]">
+            The featured properties on our website are hand-selected by local
+            estate agents that are experts in their areas.
+          </p>
+
+          <!-- slider-wrapper -->
+          <div class="slider-wrapper mt-20">
+            <div class="owl-carousel owl-theme">
+              <!-- item 1 -->
+              <div class="item">
+                <div
+                  class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
+                >
+                  <div class="thumbnail relative">
+                    <a
+                      href="https://mycasaaway.com/property/property-redsl-61946"
+                    >
+                      <img
+                        class="rounded-lg h-[230px]"
+                        src="/public/images/san-pedro.jpg"
+                        alt="REDSL-61946 | REDSL-61946"
+                      />
+                    </a>
+
+                    <!-- //thumbnail content -->
+                    <div class="absolute inset-0">
+                      <a
+                        class="absolute left-3 top-3"
+                        href="https://mycasaaway.com/property/property-redsl-61946"
+                      >
+                        <ul class="flex gap-5">
+                          <li
+                            class="bg-[#115073] px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            Featured
+                          </li>
+                          <li
+                            class="bg-orange px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            For Sale
+                          </li>
+                        </ul>
+                      </a>
+
+                      <!-- heart -->
+                      <a
+                        class="absolute right-5 bottom-4 bg-[rgb(15,21,31)]/50 p-2 rounded-lg"
+                        href="https://mycasaaway.com/login"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5 stroke-white"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </a>
+
+                      <!-- price -->
+                      <h2
+                        class="absolute left-3 text-[22px] bottom-4 font-bold text-white"
+                      >
+                        €179,000
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="details text-left">
+                    <div class="flex flex-col py-5 px-2.5">
+                      <p class="text-sm text-orange mb-2.5">House</p>
+                      <a
+                        class="flex mb-2.5"
+                        href="https://mycasaaway.com/property/property-redsl-61946"
+                      >
+                        <!-- location -->
+                        <span class="flaticon-placeholder"></span>
+                        <p class="text-[#484848] text-lg font-bold">
+                          San Pedro Del Pinatar, Murcia, Spain
+                        </p>
+                      </a>
+                      <ul class="flex gap-[30px] text-[#777777]">
+                        <li class="">Beds: 2</li>
+                        <li class="">Baths: 2</li>
+                        <li class="">m²</li>
+                      </ul>
+                    </div>
+
+                    <!-- card footer -->
+                    <div class="border-t px-2.5 py-5 border-[#eeeeee]">
+                      <a
+                        class="flex items-center gap-2.5"
+                        href="https://mycasaaway.com/estate-agent/5413"
+                      >
+                        <img
+                          src="https://admin.mycasaaway.com/public/upload/members/633c3d6dbe4ca.png"
+                          class="h-[50px] !w-[50px]"
+                        />
+
+                        <span class="text-[#555555]">Sell2Go Real Estate</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- item 2 -->
+              <div class="item">
+                <div
+                  class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
+                >
+                  <div class="thumbnail relative">
+                    <a href="https://mycasaaway.com/property/property-es145546">
+                      <img
+                        class="rounded-lg h-[230px]"
+                        src="/public/images/detached.jpg"
+                        alt="ES145546 | ES145546"
+                      />
+                    </a>
+
+                    <!-- //thumbnail content -->
+                    <div class="absolute inset-0">
+                      <a
+                        class="absolute left-3 top-3"
+                        href="https://mycasaaway.com/property/property-es145546"
+                      >
+                        <ul class="flex gap-5">
+                          <li
+                            class="bg-[#115073] px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            Featured
+                          </li>
+                          <li
+                            class="bg-orange px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            For Sale
+                          </li>
+                        </ul>
+                      </a>
+
+                      <!-- heart -->
+                      <a
+                        class="absolute right-5 bottom-4 bg-[rgb(15,21,31)]/50 p-2 rounded-lg"
+                        href="https://mycasaaway.com/login"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5 stroke-white"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </a>
+
+                      <!-- price -->
+                      <h2
+                        class="absolute left-3 text-[22px] bottom-4 font-bold text-white"
+                      >
+                        €2,400,000
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="details text-left">
+                    <div class="flex flex-col py-5 px-2.5">
+                      <p class="text-sm text-orange mb-2.5">Detached Villa</p>
+                      <a
+                        class="flex mb-2.5"
+                        href="https://mycasaaway.com/property/property-es145546"
+                      >
+                        <!-- location -->
+                        <span class="flaticon-placeholder"></span>
+                        <p class="text-[#484848] text-lg font-bold">
+                          Estepona, Malaga, Spain
+                        </p>
+                      </a>
+                      <ul class="flex gap-[30px] text-[#777777]">
+                        <li class="">Beds: 5</li>
+                        <li class="">Baths: 4</li>
+                        <li class="">433m²</li>
+                      </ul>
+                    </div>
+
+                    <!-- card footer -->
+                    <div class="border-t px-2.5 py-5 border-[#eeeeee]">
+                      <a
+                        class="flex items-center gap-2.5"
+                        href="https://mycasaaway.com/estate-agent/5497"
+                      >
+                        <img
+                          src="https://admin.mycasaaway.com/public/upload/members/635390bc18d55.png"
+                          class="h-[50px] !w-[50px]"
+                        />
+
+                        <span class="text-[#555555]">1 Casa</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="item">
+                <div
+                  class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
+                >
+                  <div class="thumbnail relative">
+                    <a
+                      href="https://mycasaaway.com/property/property-rsp-n6257-7515"
+                    >
+                      <img
+                        class="rounded-lg h-[230px]"
+                        src="/public/images/san-miguel.jpg"
+                        alt="ES145546 | ES145546"
+                      />
+                    </a>
+
+                    <!-- //thumbnail content -->
+                    <div class="absolute inset-0">
+                      <a
+                        class="absolute left-3 top-3"
+                        href="https://mycasaaway.com/property/property-rsp-n6257-7515"
+                      >
+                        <ul class="flex gap-5">
+                          <li
+                            class="bg-[#115073] px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            Featured
+                          </li>
+                          <li
+                            class="bg-orange px-1.5 py-0.5 rounded-[3px] text-white"
+                          >
+                            For Sale
+                          </li>
+                        </ul>
+                      </a>
+
+                      <!-- heart -->
+                      <a
+                        class="absolute right-5 bottom-4 bg-[rgb(15,21,31)]/50 p-2 rounded-lg"
+                        href="https://mycasaaway.com/login"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-5 h-5 stroke-white"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </a>
+
+                      <!-- price -->
+                      <h2
+                        class="absolute left-3 text-[22px] bottom-4 font-bold text-white"
+                      >
+                        €320,000
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="details text-left">
+                    <div class="flex flex-col py-5 px-2.5">
+                      <p class="text-sm text-orange mb-2.5">House</p>
+                      <a
+                        class="flex mb-2.5"
+                        href="https://mycasaaway.com/property/property-rsp-n6257-7515"
+                      >
+                        <!-- location -->
+                        <span class="flaticon-placeholder"></span>
+                        <p class="text-[#484848] text-lg font-bold">
+                          San Miguel de Salinas, Alicante, Spain
+                        </p>
+                      </a>
+                      <ul class="flex gap-[30px] text-[#777777]">
+                        <li class="">Beds: 3</li>
+                        <li class="">Baths: 2</li>
+                        <li class="">92m²</li>
+                      </ul>
+                    </div>
+
+                    <!-- card footer -->
+                    <div class="border-t px-2.5 py-5 border-[#eeeeee]">
+                      <a
+                        class="flex items-center gap-2.5"
+                        href="https://mycasaaway.com/estate-agent/5497"
+                      >
+                        <img
+                          src="https://admin.mycasaaway.com/public/upload/members/635390bc18d55.png"
+                          class="h-[50px] !w-[50px]"
+                        />
+
+                        <span class="text-[#555555]">1 Casa</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- spacer -->
+      <!-- spacer -->
+      <!-- spacer -->
+      <!-- spacer -->
+      <!-- spacer -->
+      <!-- spacer -->
+      <!-- spacer -->
       <div class="my-96"></div>
     </main>
   </body>
