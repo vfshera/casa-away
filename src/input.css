@@ -8,5 +8,27 @@ body {
 }
 
 .site-container {
-  @apply px-4 w-full mx-auto [@media_(min-width:576px)]:max-w-[540px] md:max-w-[720px] [@media_(min-width:992px)]:max-w-[960px] [@media_(min-width:1200px)]:max-w-[1170px];
+  @apply px-4 w-full mx-auto;
+}
+
+@media (min-width: 576px) {
+  .site-container {
+    @apply max-w-[540px];
+  }
+}
+@media (min-width: 768px) {
+  .site-container {
+    @apply md:max-w-[720px];
+  }
+}
+
+@media (min-width: 992px) {
+  .site-container {
+    @apply max-w-[960px];
+  }
+}
+@media (min-width: 1200px) {
+  .site-container {
+    @apply md:max-w-[1170p];
+  }
 }
