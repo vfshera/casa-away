@@ -18,7 +18,7 @@ body {
 }
 @media (min-width: 768px) {
   .site-container {
-    @apply md:max-w-[720px];
+    @apply max-w-[720px];
   }
 }
 
@@ -29,6 +29,6 @@ body {
 }
 @media (min-width: 1200px) {
   .site-container {
-    @apply md:max-w-[1170p];
+    @apply max-w-[1170px];
   }
 }

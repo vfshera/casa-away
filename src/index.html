@@ -314,7 +314,7 @@
       </header>
 
       <section
-        class="h-[730px] bg-cover bg-no-repeat before:z-[0] before:opacity-60 bg-center before:absolute before:inset-0 before:bg-[rgb(29,41,62)]"
+        class="h-[730px] bg-cover bg-no-repeat before:z-[0] before:opacity-60 relative bg-center before:absolute before:inset-0 before:bg-[rgb(29,41,62)]"
         style="background-image: url('/public/images/home-banner.webp')"
       >
         <div
@@ -635,12 +635,14 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a
                       href="https://mycasaaway.com/property/property-redsl-61946"
                     >
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-pedro.jpg"
                         alt="REDSL-61946 | REDSL-61946"
                       />
@@ -737,10 +739,12 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a href="https://mycasaaway.com/property/property-es145546">
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/detached.jpg"
                         alt="ES145546 | ES145546"
                       />
@@ -836,12 +840,14 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a
                       href="https://mycasaaway.com/property/property-rsp-n6257-7515"
                     >
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-miguel.jpg"
                         alt="ES145546 | ES145546"
                       />
@@ -968,11 +974,11 @@
             simply by glancing out of your window.
           </p>
           <!--  -->
-          <div class="grid grid-cols-3 gap-[30px] mt-12">
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-[30px] mt-12">
             <!-- property 1 -->
             <div class="property relative rounded-lg overflow-hidden group">
               <div
-                class="thumbnail group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
+                class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
@@ -991,10 +997,10 @@
             </div>
             <!-- property 2-->
             <div
-              class="property col-span-2 relative rounded-lg overflow-hidden group"
+              class="property xl:col-span-2 relative rounded-lg overflow-hidden group"
             >
               <div
-                class="thumbnail group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
+                class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
@@ -1013,10 +1019,10 @@
             </div>
             <!-- property 3 -->
             <div
-              class="property col-span-2 relative rounded-lg overflow-hidden group"
+              class="property xl:col-span-2 relative rounded-lg overflow-hidden group"
             >
               <div
-                class="thumbnail group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
+                class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
@@ -1036,7 +1042,7 @@
             <!-- property 4 -->
             <div class="property relative rounded-lg overflow-hidden group">
               <div
-                class="thumbnail group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
+                class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
@@ -1055,10 +1061,10 @@
             </div>
             <!-- property 5-->
             <div
-              class="property col-span-2 relative rounded-lg overflow-hidden group"
+              class="property xl:col-span-2 relative rounded-lg overflow-hidden group"
             >
               <div
-                class="thumbnail group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
+                class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
@@ -1096,7 +1102,9 @@
           </p>
 
           <!-- WHY US -->
-          <div class="grid grid-cols-3 gap-[30px] mt-[50px]">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] mt-[50px]"
+          >
             <!-- card 1-->
             <div
               class="card group cursor-pointer hover:border-b-orange hover:border-b-4 pt-[50px] pb-[30px] px-[41px] rounded-lg border border-[#ebebebe] flex flex-col items-center bg-white"
@@ -1179,12 +1187,14 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a
                       href="https://mycasaaway.com/property/property-redsl-61946"
                     >
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-pedro.jpg"
                         alt="REDSL-61946 | REDSL-61946"
                       />
@@ -1276,10 +1286,12 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a href="https://mycasaaway.com/property/property-es145546">
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/detached.jpg"
                         alt="ES145546 | ES145546"
                       />
@@ -1370,12 +1382,14 @@
                 <div
                   class="flex flex-col bg-white p-2.5 rounded-lg drop-shadow"
                 >
-                  <div class="thumbnail relative">
+                  <div
+                    class="thumbnail bg-blue-dark rounded-lg relative overflow-hidden"
+                  >
                     <a
                       href="https://mycasaaway.com/property/property-rsp-n6257-7515"
                     >
                       <img
-                        class="rounded-lg h-[230px]"
+                        class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-miguel.jpg"
                         alt="ES145546 | ES145546"
                       />
@@ -1486,7 +1500,7 @@
           <!-- testimonial -->
           <div class="flex flex-col items-center mt-[50px]">
             <img
-              class="border-[10px] border-white/10 rounded-full"
+              class="border-[10px] max-h-[114px] lg:max-h-max border-white/10 rounded-full"
               src="https://mycasaaway.com/assets/images/testimonial/1.jpg"
               alt="1.jpg"
             />
@@ -1520,18 +1534,24 @@
 
           <!-- blogs -->
           <div class="mt-10">
-            <div class="grid grid-cols-3 gap-[30px]">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px]"
+            >
               <!-- blog 1 -->
 
               <div
-                class="flex flex-col h-max bg-white p-2.5 rounded-lg drop-shadow"
+                class="flex flex-col xl:h-max bg-white p-2.5 rounded-lg drop-shadow"
               >
                 <!-- blog image -->
-                <img
-                  class="rounded-lg h-[230px]"
-                  src="/public/images/blog-1.png"
-                  alt="7 Exciting Things To Do In Guadalest"
-                />
+                <div
+                  class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
+                >
+                  <img
+                    class="!w-[360px] md:w-full h-[230px]"
+                    src="/public/images/blog-1.png"
+                    alt="7 Exciting Things To Do In Guadalest"
+                  />
+                </div>
 
                 <!-- blog summary -->
                 <div class="py-5 px-2.5">
@@ -1557,15 +1577,18 @@
               <!-- blog 2 -->
 
               <div
-                class="flex flex-col h-max bg-white p-2.5 rounded-lg drop-shadow"
+                class="flex flex-col xl:h-max bg-white p-2.5 rounded-lg drop-shadow"
               >
-                <!-- blog-image -->
-                <img
-                  class="rounded-lg h-[230px]"
-                  src="/public/images/blog-2.png"
-                  alt="The Best Regions To Live In Spain"
-                />
-
+                <!-- blog image -->
+                <div
+                  class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
+                >
+                  <img
+                    class="!w-[360px] md:w-full h-[230px]"
+                    src="/public/images/blog-2.png"
+                    alt="The Best Regions To Live In Spain"
+                  />
+                </div>
                 <!-- blog summary -->
 
                 <div class="py-5 px-2.5">
@@ -1591,14 +1614,18 @@
               <!-- blog 3 -->
 
               <div
-                class="flex flex-col h-max bg-white p-2.5 rounded-lg drop-shadow"
+                class="flex flex-col xl:h-max bg-white p-2.5 rounded-lg drop-shadow"
               >
                 <!-- blog image -->
-                <img
-                  class="rounded-lg h-[230px]"
-                  src="/public/images/blog-3.png"
-                  alt="The Advantages Of Buying A Property In Spain"
-                />
+                <div
+                  class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
+                >
+                  <img
+                    class="!w-[360px] md:w-full h-[230px]"
+                    src="/public/images/blog-3.png"
+                    alt="The Advantages Of Buying A Property In Spain"
+                  />
+                </div>
 
                 <!-- blog summary -->
 
@@ -1635,7 +1662,9 @@
       <!-- AGENT SIGNUP -->
 
       <section class="bg-orange py-[50px]">
-        <div class="site-container flex items-center justify-between">
+        <div
+          class="site-container flex items-center flex-col xl:flex-row gap-[30px] xl:gap-0 justify-between"
+        >
           <div class="flex flex-col">
             <h2 class="text-3xl text-white mb-2 font-bold">
               Are you an Estate Agent?

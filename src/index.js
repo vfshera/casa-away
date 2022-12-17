@@ -3,6 +3,17 @@ $(document).ready(function () {
     loop: true,
     margin: 30,
     nav: true,
-    items: 3,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
 });
