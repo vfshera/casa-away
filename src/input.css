@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.site-container {
+  @apply px-4 w-full mx-auto [@media_(min-width:576px)]:max-w-[540px] md:max-w-[720px] [@media_(min-width:992px)]:max-w-[960px] xl:max-w-[1170px];
+}

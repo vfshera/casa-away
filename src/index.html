@@ -1,13 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Tailwind Html Starter
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>CasaAway</title>
+  </head>
+  <body>
+    <main>
+      <!-- HEADER -->
+      <header
+        class="fixed px-[30px] z-[1000] left-0 top-0 w-full flex justify-between items-center"
+      >
+        <a href="/" class="mt-6">
+          <img
+            class="w-[150px]"
+            src="/public/images/casa-away-logo.webp"
+            alt="Home of Casa Away"
+          />
+        </a>
+
+        <!-- MAIN NAVIGATION -->
+        <ul class="flex items-center text-white">
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Home</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">For Sale</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Locations</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">About</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Valuation</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5"
+              >Advertise here</a
+            >
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Login</a>
+          </li>
+          <li>
+            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">AR</a>
+          </li>
+        </ul>
+      </header>
+
+      <section
+        class="h-[730px] bg-cover bg-no-repeat before:z-[0] before:opacity-60 bg-center before:absolute before:inset-0 before:bg-[rgb(29,41,62)]"
+        style="background-image: url('/public/images/home-banner.webp')"
+      >
+        <div
+          class="relative z-[2] flex flex-col px-[30px] justify-center items-center h-full w-full text-white"
+        >
+          <h2 class="text-[50px] leading-[60px] font-bold">
+            Finding your happy place has never been easier
+          </h2>
+          <p class="text-lg mt-2 font-semibold">
+            Find Property for Sale in Spain like a Local
+          </p>
+          <!-- pill -->
+          <div class="pill flex justify-center items-center mt-12">
+            <a
+              href="#"
+              class="mr-4 text-center leading-[35px] py-2 px-4 relative before:absolute before:content-[''] before:w-0 before:h-0 before:border-[20px] before:top-[44px] before:mr-5 before:border-transparent before:border-t-orange bg-orange h-[50px] rounded-lg w-[180px]"
+              >For Sale</a
+            >
+          </div>
+          <!-- FORM -->
+          <div class="mt-[30px] bg-white/[.15] p-2.5 rounded-lg w-full">
+            <div class="bg-white rounded-lg py-[30px] px-5 w-full">
+              <form
+                method="GET"
+                action="https://mycasaaway.com/property/search"
+                data-form-type="search"
+                class="flex flex-col items-center gap-6"
+              >
+                <ul class="flex items-center gap-4">
+                  <li class="list-inline-item">
+                    <div class="input-group flex items-stretch">
+                      <input
+                        type="text"
+                        id="search_query"
+                        name="search_query"
+                        class="text-dark text-sm focus:outline-none placeholder:text-dark h-[50px] px-3 py-1.5 border-[#ebebeb] border rounded-lg"
+                        placeholder="Search By Location"
+                        autocomplete="off"
+                      />
+                      <div class="input-group-append">
+                        <button
+                          class="bg-orange h-full px-3 py-1.5 rounded-lg"
+                          type="submit"
+                          id="button-addon2"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="search_option_two">
+                      <div class="candidate_revew_select">
+                        <div class="dropdown w-full relative">
+                          <select
+                            id="property_min_price"
+                            name="property_min_price"
+                            title="Max Price"
+                            data-size="5"
+                            class="opacity-0 h-full w-[.5px] absolute border-none left-1/2 bottom-0 block"
+                          >
+                            <option class="" value=""></option>
+                            <option value="50000">€ 50,000</option>
+                            <option value="100000">€ 100,000</option>
+                            <option value="150000">€ 150,000</option>
+                            <option value="200000">€ 200,000</option>
+                            <option value="250000">€ 250,000</option>
+                            <option value="300000">€ 300,000</option>
+                            <option value="350000">€ 350,000</option>
+                            <option value="400000">€ 400,000</option>
+                            <option value="450000">€ 450,000</option>
+                            <option value="500000">€ 500,000</option>
+                            <option value="600000">€ 600,000</option>
+                            <option value="700000">€ 700,000</option>
+                            <option value="800000">€ 800,000</option>
+                            <option value="900000">€ 900,000</option>
+                            <option value="100000000000">
+                              €1,000,000+
+                            </option></select
+                          ><button
+                            type="button"
+                            class="w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
+                            data-toggle="dropdown"
+                            role="button"
+                            data-id="property_min_price"
+                            title="Max Price"
+                            data-form-type="other"
+                          >
+                            <div
+                              class="filter-option text-sm text-dark font-extrabold"
+                            >
+                              <div class="filter-option-inner">
+                                <div
+                                  class="filter-option-inner-inner overflow-hidden"
+                                >
+                                  Max Price
+                                </div>
+                              </div>
+                            </div>
+                          </button>
+                          <div class="dropdown-menu" role="combobox">
+                            <div
+                              class="inner show"
+                              role="listbox"
+                              aria-expanded="false"
+                              tabindex="-1"
+                            >
+                              <ul class="dropdown-menu inner show"></ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="search_option_two">
+                      <div class="candidate_revew_select">
+                        <div class="dropdown w-full relative">
+                          <select
+                            id="bedrooms"
+                            name="bedrooms"
+                            data-live-search="false"
+                            data-actions-box="false"
+                            data-width="100%"
+                            title="Bedrooms"
+                            class="opacity-0 h-full w-[.5px] absolute border-none left-1/2 bottom-0 block"
+                          >
+                            <option class="" value=""></option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option></select
+                          ><button
+                            type="button"
+                            class="w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
+                            data-toggle="dropdown"
+                            role="button"
+                            data-id="bedrooms"
+                            title="Bedrooms"
+                            data-form-type="other"
+                          >
+                            <div
+                              class="filter-option text-sm text-dark font-extrabold"
+                            >
+                              <div class="filter-option-inner">
+                                <div
+                                  class="filter-option-inner-inner overflow-hidden"
+                                >
+                                  Bedrooms
+                                </div>
+                              </div>
+                            </div>
+                          </button>
+                          <div class="dropdown-menu" role="combobox">
+                            <div
+                              class="inner show"
+                              role="listbox"
+                              aria-expanded="false"
+                              tabindex="-1"
+                            >
+                              <ul class="dropdown-menu inner show"></ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="search_option_button">
+                      <button
+                        type="submit"
+                        class="bg-orange w-[190px] text-base font-bold h-[50px] hover:bg-white text-white hover:text-orange hover:border-2 hover:border-orange transition-all duration-300 rounded-lg"
+                        data-form-type="action,search"
+                      >
+                        START SEARCH
+                      </button>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="search_option_button">
+                      <button
+                        type="button"
+                        class="bg-orange flex items-center justify-center gap-1 w-[190px] text-base font-bold h-[50px] hover:bg-white text-white hover:text-orange hover:border-2 hover:border-orange transition-all duration-300 rounded-lg"
+                        data-toggle="modal"
+                        data-target="#MoreFeatureModal"
+                        data-form-type="other"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                          />
+                        </svg>
+                        MORE FILTERS
+                      </button>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="input-group flex items-stretch">
+                      <input
+                        type="text"
+                        id="property_reference"
+                        name="property_reference"
+                        class="text-dark text-sm focus:outline-none placeholder:text-dark h-[50px] px-3 py-1.5 border-[#ebebeb] border rounded-lg"
+                        placeholder="Property Ref No # ?"
+                        data-form-type="query"
+                      />
+                      <div class="input-group-append">
+                        <button
+                          class="bg-orange px-3 py-1.5 h-full rounded-lg"
+                          type="submit"
+                          id="button-addon2"
+                          data-form-type="action,search"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <h4 class="text-black">
+                  <strong class="text-orange">Popular Searches:</strong>
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-costa-calida"
+                    class="text-black hover:text-orange"
+                    >Costa Calida</a
+                  >,
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-costa-blanca"
+                    class="text-black hover:text-orange"
+                    >Costa Blanca</a
+                  >,
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-costa-del-sol"
+                    class="text-black hover:text-orange"
+                    >Costa del Sol</a
+                  >,
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-murcia"
+                    class="text-black hover:text-orange"
+                    >Murcia</a
+                  >,
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-mazarron"
+                    class="text-black hover:text-orange"
+                    >Mazarron</a
+                  >,
+                  <a
+                    href="https://mycasaaway.com/property-for-sale-near-the-beach"
+                    class="text-black hover:text-orange"
+                    >Near the Beach and</a
+                  >
+                  <a
+                    href="https://mycasaaway.com/golf-properties-for-sale"
+                    class="text-black hover:text-orange"
+                    >Popular Golf Course Properties</a
+                  >
+                </h4>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-96"></div>
+    </main>
+  </body>
 </html>
