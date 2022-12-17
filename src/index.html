@@ -22,34 +22,217 @@
 
         <!-- MAIN NAVIGATION -->
         <ul class="flex items-center text-white">
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Home</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5">Home</a>
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">For Sale</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5"
+              >For Sale</a
+            >
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Locations</a>
+          <li class="inline-block">
+            <div class="dropdown group relative">
+              <button
+                class="pt-[38px] pr-4 pb-[30px] pl-2.5 flex gap-1.5 items-center"
+              >
+                Locations
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+
+              <ul
+                class="submenu absolute before:absolute max-h-0 opacity-0 hidden transition-[max-height,opacity] duration-300 group-hover:block group-hover:opacity-100 group-hover:max-h-max group-hover:before:-top-8 before:transition-all before:top-0 before:right-6 before:w-0 before:h-0 before:border-[20px] before:border-transparent before:border-b-white -ml-[180px] right-6 py-4 [box-shadow:_0px_0px_50px_0px_rgba(32,32,32,0.15)] bg-white rounded-lg text-dark"
+              >
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/location"
+                    ><span class="title">Popular Locations</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-calida"
+                    ><span class="title">Costa Calida</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-blanca"
+                    ><span class="title">Costa Blanca</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-del-sol"
+                    ><span class="title">Costa del Sol</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-murcia"
+                    ><span class="title">Murcia Region</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block"
+                    href="https://mycasaaway.com/property-for-sale-alicante-region"
+                    ><span class="title">Alicante Region</span></a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">About</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5">About</a>
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Blog</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5">Blog</a>
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Valuation</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5"
+              >Valuation</a
+            >
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5"
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5"
               >Advertise here</a
             >
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">Login</a>
+          <li class="inline-block">
+            <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5">Login</a>
           </li>
-          <li>
-            <a href="#" class="pt-[38px] pr-4 pb-[30px] pl-2.5">AR</a>
+          <li class="inline-block">
+            <div class="dropdown group relative">
+              <button
+                class="pt-[38px] pr-4 pb-[30px] pl-2.5 flex gap-1.5 items-center"
+              >
+                <span class="flex">
+                  <span
+                    class="text-[8px] bg-white border-r text-dark border-dark px-1.5 py-0.5"
+                  >
+                    A
+                  </span>
+                  <span class="px-1 py-0.5 bg-white"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="black"
+                      class="w-2.5 h-2.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+                      /></svg
+                  ></span>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+
+              <ul
+                class="submenu absolute before:absolute max-h-0 opacity-0 hidden transition-[max-height,opacity] duration-300 group-hover:block group-hover:opacity-100 group-hover:max-h-max group-hover:before:-top-8 before:transition-all before:top-0 before:right-6 before:w-0 before:h-0 before:border-[20px] before:border-transparent before:border-b-white right-0 py-4 [box-shadow:_0px_0px_50px_0px_rgba(32,32,32,0.15)] bg-white rounded-lg text-dark"
+              >
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/location"
+                    ><span class="title">Popular Locations</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-calida"
+                    ><span class="title">Costa Calida</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-blanca"
+                    ><span class="title">Costa Blanca</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-costa-del-sol"
+                    ><span class="title">Costa del Sol</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block border-b border-[#dedede]"
+                    href="https://mycasaaway.com/property-for-sale-murcia"
+                    ><span class="title">Murcia Region</span></a
+                  >
+                </li>
+                <li
+                  class="transition-all duration-300 px-[30px] w-[260px] hover:text-orange hover:translate-x-2"
+                >
+                  <a
+                    class="py-3 pr-5 block"
+                    href="https://mycasaaway.com/property-for-sale-alicante-region"
+                    ><span class="title">Alicante Region</span></a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </header>
@@ -312,7 +495,7 @@
                   </li>
                 </ul>
 
-                <h4 class="text-black">
+                <h4 class="text-black text-lg">
                   <strong class="text-orange">Popular Searches:</strong>
                   <a
                     href="https://mycasaaway.com/property-for-sale-costa-calida"
