@@ -42,10 +42,11 @@
       <!-- HEADER -->
       <header
         id="MainHeader"
-        class="fixed px-[30px] z-[1000] left-0 top-0 w-full flex justify-between items-center"
+        class="fixed px-[30px] z-[1000] left-0 top-0 w-full flex justify-center bg-white lg:bg-transparent transition-all lg:justify-between items-center"
       >
-        <a href="/" class="mt-6">
+        <a href="/" class="my-3 lg:mt-6">
           <img
+            loading="lazy"
             class="w-[150px]"
             src="/public/images/casa-away-logo.webp"
             alt="Home of Casa Away"
@@ -53,7 +54,7 @@
         </a>
 
         <!-- MAIN NAVIGATION -->
-        <ul class="flex items-center text-white">
+        <ul class="lg:flex items-center hidden text-white">
           <li class="inline-block">
             <a href="#" class="block pt-[38px] pr-4 pb-[30px] pl-2.5">Home</a>
           </li>
@@ -299,6 +300,7 @@
                     class="py-3 pr-5 border-b border-[#dedede] flex gap-1"
                     href="https://mycasaaway.com/lang/es"
                     ><img
+                      loading="lazy"
                       class="h-[30px] w-[30px]"
                       src="/public/images/spanish.svg"
                       alt="Spanish"
@@ -314,13 +316,16 @@
       </header>
 
       <section
-        class="h-[730px] bg-cover bg-no-repeat before:z-[0] before:opacity-60 relative bg-center before:absolute before:inset-0 before:bg-[rgb(29,41,62)]"
+        id="HeroSection"
+        class="h-[1265px] md:h-[1030px] lg:h-[730px] bg-cover bg-no-repeat before:z-[0] before:opacity-60 relative bg-center before:absolute before:inset-0 before:bg-[rgb(29,41,62)]"
         style="background-image: url('/public/images/home-banner.webp')"
       >
         <div
           class="relative z-[2] flex flex-col px-[30px] justify-center items-center h-full w-full text-white"
         >
-          <h2 class="text-[50px] leading-[60px] font-bold">
+          <h2
+            class="text-3xl md:text-[50px] text-center md:leading-[60px] font-bold"
+          >
             Finding your happy place has never been easier
           </h2>
           <p class="text-lg mt-2 font-semibold">
@@ -343,14 +348,14 @@
                 data-form-type="search"
                 class="flex flex-col items-center gap-6"
               >
-                <ul class="flex items-center gap-4">
-                  <li class="list-inline-item">
-                    <div class="input-group flex items-stretch">
+                <ul class="flex items-center flex-wrap gap-4">
+                  <li class="w-full md:w-max">
+                    <div class="input-group w-full md:w-max flex items-stretch">
                       <input
                         type="text"
                         id="search_query"
                         name="search_query"
-                        class="text-dark text-sm focus:outline-none placeholder:text-dark h-[50px] px-3 py-1.5 border-[#ebebeb] border rounded-lg"
+                        class="text-dark flex-1 text-sm focus:outline-none placeholder:text-dark h-[50px] px-3 py-1.5 border-[#ebebeb] border rounded-lg"
                         placeholder="Search By Location"
                         autocomplete="off"
                       />
@@ -378,10 +383,12 @@
                       </div>
                     </div>
                   </li>
-                  <li class="list-inline-item">
+                  <li class="w-full md:w-max">
                     <div class="search_option_two">
                       <div class="candidate_revew_select">
-                        <div class="dropdown w-full relative">
+                        <div
+                          class="dropdown w-full flex justify-center md:justify-start relative"
+                        >
                           <select
                             id="property_min_price"
                             name="property_min_price"
@@ -409,7 +416,7 @@
                             </option></select
                           ><button
                             type="button"
-                            class="w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
+                            class="w-4/5 md:w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
                             data-toggle="dropdown"
                             role="button"
                             data-id="property_min_price"
@@ -442,10 +449,12 @@
                       </div>
                     </div>
                   </li>
-                  <li class="list-inline-item">
+                  <li class="w-full md:w-max">
                     <div class="search_option_two">
                       <div class="candidate_revew_select">
-                        <div class="dropdown w-full relative">
+                        <div
+                          class="dropdown w-full flex justify-center md:justify-start relative"
+                        >
                           <select
                             id="bedrooms"
                             name="bedrooms"
@@ -463,7 +472,7 @@
                             <option value="5">5+</option></select
                           ><button
                             type="button"
-                            class="w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
+                            class="w-4/5 md:w-[180px] border-[#ebebeb] border h-[50px] rounded-lg bg-white text-sm px-3 py-1.5"
                             data-toggle="dropdown"
                             role="button"
                             data-id="bedrooms"
@@ -496,8 +505,10 @@
                       </div>
                     </div>
                   </li>
-                  <li class="list-inline-item">
-                    <div class="search_option_button">
+                  <li class="w-full md:w-max">
+                    <div
+                      class="search_option_button flex justify-center md:justify-start"
+                    >
                       <button
                         type="submit"
                         class="bg-orange w-[190px] text-base font-bold h-[50px] hover:bg-white text-white hover:text-orange hover:border-2 hover:border-orange transition-all duration-300 rounded-lg"
@@ -507,8 +518,10 @@
                       </button>
                     </div>
                   </li>
-                  <li class="list-inline-item">
-                    <div class="search_option_button">
+                  <li class="w-full md:w-max">
+                    <div
+                      class="search_option_button flex justify-center md:justify-start"
+                    >
                       <button
                         type="button"
                         class="bg-orange flex items-center justify-center gap-1 w-[190px] text-base font-bold h-[50px] hover:bg-white text-white hover:text-orange hover:border-2 hover:border-orange transition-all duration-300 rounded-lg"
@@ -534,8 +547,10 @@
                       </button>
                     </div>
                   </li>
-                  <li class="list-inline-item">
-                    <div class="input-group flex items-stretch">
+                  <li class="w-full md:w-max">
+                    <div
+                      class="input-group flex justify-center md:justify-start items-stretch"
+                    >
                       <input
                         type="text"
                         id="property_reference"
@@ -571,7 +586,7 @@
                   </li>
                 </ul>
 
-                <h4 class="text-black text-lg">
+                <h4 class="text-black text-lg text-center">
                   <strong class="text-orange">Popular Searches:</strong>
                   <a
                     href="https://mycasaaway.com/property-for-sale-costa-calida"
@@ -642,6 +657,7 @@
                       href="https://mycasaaway.com/property/property-redsl-61946"
                     >
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-pedro.jpg"
                         alt="REDSL-61946 | REDSL-61946"
@@ -723,6 +739,7 @@
                         href="https://mycasaaway.com/estate-agent/5413"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/633c3d6dbe4ca.png"
                           class="h-[50px] !w-[50px] rounded-full"
                         />
@@ -744,6 +761,7 @@
                   >
                     <a href="https://mycasaaway.com/property/property-es145546">
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/detached.jpg"
                         alt="ES145546 | ES145546"
@@ -825,6 +843,7 @@
                         href="https://mycasaaway.com/estate-agent/5497"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/635390bc18d55.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -847,6 +866,7 @@
                       href="https://mycasaaway.com/property/property-rsp-n6257-7515"
                     >
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="/public/images/san-miguel.jpg"
                         alt="ES145546 | ES145546"
@@ -928,6 +948,7 @@
                         href="https://mycasaaway.com/estate-agent/5497"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/635390bc18d55.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -981,6 +1002,7 @@
                 class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
+                  loading="lazy"
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
                   src="https://mycasaaway.com/assets/images/property/costa-calida.jpg"
                   alt="costa-calida"
@@ -1003,6 +1025,7 @@
                 class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
+                  loading="lazy"
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
                   src="https://mycasaaway.com/assets/images/property/costa-blanca.jpg"
                   alt="costa-blanca"
@@ -1025,6 +1048,7 @@
                 class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
+                  loading="lazy"
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
                   src="https://mycasaaway.com/assets/images/property/costa-del-sol.jpg"
                   alt="costa-del-sol"
@@ -1045,6 +1069,7 @@
                 class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
+                  loading="lazy"
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
                   src="https://mycasaaway.com/assets/images/property/murcia.jpg"
                   alt="murcia"
@@ -1067,6 +1092,7 @@
                 class="thumbnail bg-blue-dark rounded-lg group-hover:[&>img]:-rotate-3 group-hover:[&>img]:scale-110"
               >
                 <img
+                  loading="lazy"
                   class="min-w-full min-h-full transition-transform duration-500 ease-in-out"
                   src="https://mycasaaway.com/assets/images/property/alicante.jpg"
                   alt="alicante"
@@ -1113,6 +1139,7 @@
                 class="icon bg-[#f7f7f7] flex justify-center items-center group-hover:[background-image:-webkit-linear-gradient(0deg,_rgb(250,_124,_65)_0%,_rgb(255,_101,_101)_100%)] transition-all duration-300 w-[130px] aspect-square rounded-full"
               >
                 <img
+                  loading="lazy"
                   class=""
                   src="https://mycasaaway.com/assets/images/GIF1.gif"
                   alt="GIF1"
@@ -1131,6 +1158,7 @@
                 class="icon bg-[#f7f7f7] flex justify-center items-center group-hover:[background-image:-webkit-linear-gradient(0deg,_rgb(250,_124,_65)_0%,_rgb(255,_101,_101)_100%)] transition-all duration-300 w-[130px] aspect-square rounded-full"
               >
                 <img
+                  loading="lazy"
                   class=""
                   src="https://mycasaaway.com/assets/images/GIF2.gif"
                   alt="GIF2"
@@ -1151,6 +1179,7 @@
                 class="icon bg-[#f7f7f7] flex justify-center items-center group-hover:[background-image:-webkit-linear-gradient(0deg,_rgb(250,_124,_65)_0%,_rgb(255,_101,_101)_100%)] transition-all duration-300 w-[130px] aspect-square rounded-full"
               >
                 <img
+                  loading="lazy"
                   class="max-h-full"
                   src="https://mycasaaway.com/assets/images/GIF3.gif"
                   alt="GIF3"
@@ -1194,6 +1223,7 @@
                       href="https://mycasaaway.com/property/property-ls42247-mo"
                     >
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="https://livinatspain.com/media/images/properties/o_1g7u50u1u18cit5sjlj1vcot0i26.JPG"
                         alt="LS42247-MO | LS42247-MO"
@@ -1270,6 +1300,7 @@
                         href="https://mycasaaway.com/estate-agent/5548"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/6385bf0f89baf.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -1291,6 +1322,7 @@
                   >
                     <a href="https://mycasaaway.com/property/property-551363">
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="https://assetsrv.advanceagent.co.uk/1028/d0eb/e0a141fe/Villa_Tomillo_Arial_view_2_xlarge.jpg"
                         alt="551363 | 551363"
@@ -1368,6 +1400,7 @@
                         href="https://mycasaaway.com/estate-agent/5560"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/637f0016e0e88.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -1390,6 +1423,7 @@
                   >
                     <a href="https://mycasaaway.com/property/property-oplf075">
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="https://s3.amazonaws.com/clients.opgroup.listingphotos/7632_luxury_apartments_oceanic_220322202528_oceanic_apt_aerial_view.jpg"
                         alt="OPLF075 | OPLF075"
@@ -1466,6 +1500,7 @@
                         href="https://mycasaaway.com/estate-agent/5497"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/637f09745686c.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -1486,6 +1521,7 @@
                   >
                     <a href="https://mycasaaway.com/property/property-gmrv-1">
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="https://www.droomhuisspanje.nl/images/viviendas/522/g_appartement-in-los-alcazares-nabij-strand-mar-menor-murcia-costa-calida-1-.jpg"
                         alt="GMRV-1 | GMRV-1"
@@ -1562,6 +1598,7 @@
                         href="https://mycasaaway.com/estate-agent/5502"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/63538fb196bb3.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -1582,6 +1619,7 @@
                   >
                     <a href="https://mycasaaway.com/property/property-alt02">
                       <img
+                        loading="lazy"
                         class="!w-[360px] md:w-full h-[230px]"
                         src="https://respacio-4c53102df1c9de6eca4f00689a84fb6b.s3.eu-west-3.amazonaws.com/property_attachment/detail_image/property_image_1lwzy6xyn1_20220225104116.jpg"
                         alt="alt02 | alt02"
@@ -1658,6 +1696,7 @@
                         href="https://mycasaaway.com/estate-agent/5492"
                       >
                         <img
+                          loading="lazy"
                           src="https://admin.mycasaaway.com/public/upload/members/634955b496f87.png"
                           class="h-[50px] rounded-full !w-[50px]"
                         />
@@ -1693,6 +1732,7 @@
           <!-- testimonial -->
           <div class="flex flex-col items-center mt-[50px]">
             <img
+              loading="lazy"
               class="border-[10px] max-h-[114px] lg:max-h-max border-white/10 rounded-full"
               src="https://mycasaaway.com/assets/images/testimonial/1.jpg"
               alt="1.jpg"
@@ -1740,6 +1780,7 @@
                   class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
                 >
                   <img
+                    loading="lazy"
                     class="!w-[360px] md:w-full h-[230px]"
                     src="/public/images/blog-1.png"
                     alt="7 Exciting Things To Do In Guadalest"
@@ -1751,7 +1792,12 @@
                   <div
                     class="flex items-center gap-2 text-[rgb(119,119,119)] text-sm"
                   >
-                    <img src="/public/images/schedule.svg" class="h-5" alt="" />
+                    <img
+                      loading="lazy"
+                      src="/public/images/schedule.svg"
+                      class="h-5"
+                      alt=""
+                    />
                     Oct 20, 2022
                   </div>
                   <h4 class="text-[#484848] text-lg my-2">
@@ -1777,6 +1823,7 @@
                   class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
                 >
                   <img
+                    loading="lazy"
                     class="!w-[360px] md:w-full h-[230px]"
                     src="/public/images/blog-2.png"
                     alt="The Best Regions To Live In Spain"
@@ -1788,7 +1835,12 @@
                   <div
                     class="flex items-center gap-2 text-[rgb(119,119,119)] text-sm"
                   >
-                    <img src="/public/images/schedule.svg" class="h-5" alt="" />
+                    <img
+                      loading="lazy"
+                      src="/public/images/schedule.svg"
+                      class="h-5"
+                      alt=""
+                    />
                     Sep 05, 2022
                   </div>
                   <h4 class="text-[#484848] text-lg my-2">
@@ -1814,6 +1866,7 @@
                   class="blog-image bg-blue-dark rounded-lg relative overflow-hidden"
                 >
                   <img
+                    loading="lazy"
                     class="!w-[360px] md:w-full h-[230px]"
                     src="/public/images/blog-3.png"
                     alt="The Advantages Of Buying A Property In Spain"
@@ -1826,7 +1879,12 @@
                   <div
                     class="flex items-center gap-2 text-[rgb(119,119,119)] text-sm"
                   >
-                    <img src="/public/images/schedule.svg" class="h-5" alt="" />
+                    <img
+                      loading="lazy"
+                      src="/public/images/schedule.svg"
+                      class="h-5"
+                      alt=""
+                    />
                     Sep 05, 2022
                   </div>
                   <h4 class="text-[#484848] text-lg my-2">
